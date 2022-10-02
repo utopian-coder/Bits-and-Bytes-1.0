@@ -1,12 +1,7 @@
-import Card from "../UI/Card";
+import LandingImg from "../../assets/landing.jpg";
 import classes from "./Image.module.css";
-
 const Image = () => {
-  return (
-    <Card className={classes.img}>
-      <p>smkddksmd</p>
-    </Card>
-  );
+  return <img className={classes.img} src={LandingImg} />;
 };
 
 export default Image;

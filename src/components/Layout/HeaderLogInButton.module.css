@@ -1,6 +1,9 @@
 .btn {
   cursor: pointer;
-  background-color: white;
+  background-color: hsl(195, 60%, 75%);
   padding: 0.8em 2em;
   border-radius: 0.3em;
+  margin-right: 3em;
+  border: 0.5px #e6e6e6;
+  font-family: "Josefin Sans", sans-serif;
 }

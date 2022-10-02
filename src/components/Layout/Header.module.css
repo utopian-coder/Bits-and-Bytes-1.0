@@ -1,42 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Lobster+Two&family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(39, 39, 39);
 }
 
-h1 {
+img {
   cursor: pointer;
+  margin-left: 1em;
+  height: 9vh;
+  width: 15vw;
 }
 
 .header {
-  max-height: 8vh;
+  height: 9vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
-  background: linear-gradient(
-    120deg,
-    rgb(255, 84, 112),
-    rgb(154, 48, 154),
-    black
-  );
-  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(243, 243, 243);
+  color: rgb(39, 39, 39);
+  line-height: 1.5;
   box-shadow: 0px 15px 29px -11px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-right: 6em;
 }
 
 ul > li {
   list-style: none;
   display: inline-block;
-  margin-left: 3em;
-  margin-right: 5em;
+  margin: 0 2.5em;
 }

@@ -1,10 +1,11 @@
 import HeaderLogInButton from "./HeaderLogInButton";
 import classes from "./Header.module.css";
+import Logo from "../../assets/logo.png";
 
 const Header = (props) => {
   return (
     <header className={classes.header}>
-      <h1>bits &amp; bytes </h1>
+      <img src={Logo} />
       <nav className={classes.navbar}>
         <ul>
           <li>
@@ -15,6 +16,9 @@ const Header = (props) => {
           </li>
           <li>
             <a href='#'>Contact</a>
+          </li>
+          <li>
+            <a href='#'>Tools</a>
           </li>
         </ul>
       </nav>

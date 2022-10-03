@@ -1,6 +1,5 @@
 .feature_container {
-  margin: 0;
+  margin-top: 9vh;
   height: 100vh;
   text-align: center;
-  background-color: green;
 }

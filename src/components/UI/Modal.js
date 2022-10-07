@@ -4,6 +4,7 @@ import Card from "./Card";
 import { Fragment, useContext } from "react";
 import { ImCross } from "react-icons/im";
 import ModalStateContext from "../../store/modal-state-context";
+import ReactDOM from "react-dom";
 
 const Backdrop = () => {
   const modalStateCtx = useContext(ModalStateContext);
@@ -26,11 +27,13 @@ const ModalOverlay = () => {
   );
 };
 
+const overlays = document.getElementById("overlay");
+
 const Modal = () => {
   return (
     <Fragment>
-      <ModalOverlay />
-      <Backdrop />
+      {ReactDOM.createPortal(<ModalOverlay />, overlays)}
+      {ReactDOM.createPortal(<Backdrop />, overlays)}
     </Fragment>
   );
 };

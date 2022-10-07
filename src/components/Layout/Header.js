@@ -1,11 +1,14 @@
-import HeaderLogInButton from "./HeaderLogInButton";
 import classes from "./Header.module.css";
 import Logo from "../../assets/logo.png";
+import Button from "../UI/Button";
+import { useContext } from "react";
+import ModalStateContext from "../../store/modal-state-context";
 
 const Header = (props) => {
+  const modalStateCtx = useContext(ModalStateContext);
   return (
     <header className={classes.header}>
-      <img src={Logo} />
+      <img src={Logo} alt='Brand-Logo' />
       <nav className={classes.navbar}>
         <ul>
           <li>
@@ -22,7 +25,7 @@ const Header = (props) => {
           </li>
         </ul>
       </nav>
-      <HeaderLogInButton />
+      <Button description='Log In' onClick={modalStateCtx.onToggleModalState} />
     </header>
   );
 };

@@ -5,11 +5,13 @@
   --color-bg: rgb(252, 252, 252);
   --color-primary: hsl(195, 60%, 75%);
   --color-primary-txt: rgb(39, 39, 39);
+  --transition: all 500ms ease;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -23,4 +25,8 @@ html {
 
 body {
   background: var(--color-bg);
+}
+
+a:hover {
+  transform: scale(2);
 }

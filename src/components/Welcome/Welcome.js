@@ -3,10 +3,10 @@ import Image from "./Image";
 
 import classes from "./Welcome.module.css";
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <section className={classes["welcome-container"]}>
-      <TagLine />
+      <TagLine onSignUp={props.onSignUp} />
       <Image />
     </section>
   );

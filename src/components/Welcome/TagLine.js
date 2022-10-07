@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import ModalStateContext from "../../store/modal-state-context";
+import Button from "../UI/Button";
 import classes from "./TagLine.module.css";
 
-const TagLine = () => {
+const TagLine = (props) => {
+  const modalStateCtx = useContext(ModalStateContext);
   return (
     <div className={classes.tag}>
       <h1>Learn to Code effectively.</h1>
@@ -8,7 +12,10 @@ const TagLine = () => {
         <p>Good resources build consistency.</p>
         <p>Give us a chance and fall in love with coding.</p>
       </div>
-      <button className={classes.btn}>Sign Up</button>
+      <Button
+        description='Sign Up'
+        onClick={modalStateCtx.onToggleModalState}
+      />
       <a href='#'>Get started </a>
     </div>
   );

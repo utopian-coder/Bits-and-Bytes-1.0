@@ -1,0 +1,29 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
+  margin-left: 10em;
+}
+
+.img {
+  width: 90%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.tagline__container {
+  color: var(--text-color-secondary);
+}
+
+.paragraph__pos {
+  margin: 1.5em 0;
+  line-height: 1.4;
+  font-size: 0.8rem;
+}

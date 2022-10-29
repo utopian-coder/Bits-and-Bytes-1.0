@@ -1,0 +1,14 @@
+.features {
+  display: flex;
+  align-items: center;
+}
+
+.features__container {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}

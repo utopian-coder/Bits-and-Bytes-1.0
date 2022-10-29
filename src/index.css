@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: rgb(253, 253, 253);
+  --color-hd: rgb(250, 250, 250);
+  --color-primary: rgb(128, 140, 255);
+  --text-primary: "Roboto", sans-serif;
+  --text-color-primary: rgb(114, 114, 114);
+  --text-color-secondary: rgb(83, 77, 77);
+
+  --container-lg: 85%;
+  --container-md: 90%;
+  --container-sm: 95%;
+
+  --transition: all 400ms ease;
+}
+
+a {
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--text-primary);
+  color: var(--text-color-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: var(--container-lg);
+}
+
+section {
+  height: 100vh;
+  padding-top: 10.2vh;
+}
+
+h1 h2 h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+.text__header {
+  background-image: linear-gradient(
+    120deg,
+    var(--color-primary),
+    rgb(30, 30, 102)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  border: 1px solid var(--color-primary);
+  padding: 0.8rem 2em;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn__transparent {
+  background-color: var(--color-bg);
+  color: var(--text-color-primary);
+}
+
+.btn__transparent:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn__primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn__primary:hover {
+  background-color: var(--color-bg);
+  color: var(--text-color-primary);
+}
+
+/******** MEDIUM SCREENS ********/
+
+/******** SMALL SCREENS ********/

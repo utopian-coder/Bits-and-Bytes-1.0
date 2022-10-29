@@ -1,0 +1,23 @@
+.feature__card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.feature__card {
+  word-wrap: break-word;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 0.3em;
+  height: 220px;
+  width: 250px;
+  padding: 0 1em;
+  transition: var(--transition);
+}
+
+.feature__card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+}
